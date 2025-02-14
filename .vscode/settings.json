@@ -1,0 +1,10 @@
+{
+    "files.associations": {
+        "glfw3.h": "c",
+        "iostream": "c",
+        "glad.h": "c",
+        "khrplatform.h": "c",
+        "string.h": "c"
+    },
+    "C_Cpp.default.compilerPath": "/usr/bin/gcc"
+}
