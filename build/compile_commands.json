@@ -10,5 +10,17 @@
   "command": "/opt/homebrew/bin/aarch64-apple-darwin21-gcc-12  -I/Users/lukeegan/Documents/Projects/Particle_sim/dependencies/include -iframework /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/System/Library/Frameworks -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -o CMakeFiles/Particle_Sim.dir/src/glad.c.o -c /Users/lukeegan/Documents/Projects/Particle_sim/src/glad.c",
   "file": "/Users/lukeegan/Documents/Projects/Particle_sim/src/glad.c",
   "output": "CMakeFiles/Particle_Sim.dir/src/glad.c.o"
+},
+{
+  "directory": "/Users/lukeegan/Documents/Projects/Particle_sim/build",
+  "command": "/opt/homebrew/bin/aarch64-apple-darwin21-gcc-12  -I/Users/lukeegan/Documents/Projects/Particle_sim/dependencies/include -iframework /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/System/Library/Frameworks -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -o CMakeFiles/Particle_Sim.dir/src/util.c.o -c /Users/lukeegan/Documents/Projects/Particle_sim/src/util.c",
+  "file": "/Users/lukeegan/Documents/Projects/Particle_sim/src/util.c",
+  "output": "CMakeFiles/Particle_Sim.dir/src/util.c.o"
+},
+{
+  "directory": "/Users/lukeegan/Documents/Projects/Particle_sim/build",
+  "command": "/opt/homebrew/bin/aarch64-apple-darwin21-gcc-12  -I/Users/lukeegan/Documents/Projects/Particle_sim/dependencies/include -iframework /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/System/Library/Frameworks -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -o CMakeFiles/Particle_Sim.dir/src/shader_gen.c.o -c /Users/lukeegan/Documents/Projects/Particle_sim/src/shader_gen.c",
+  "file": "/Users/lukeegan/Documents/Projects/Particle_sim/src/shader_gen.c",
+  "output": "CMakeFiles/Particle_Sim.dir/src/shader_gen.c.o"
 }
 ]

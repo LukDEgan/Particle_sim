@@ -1,10 +1,15 @@
 #include <stdio.h>
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
+#include "shader_gen.h"
+#include <stdbool.h>
 
 void framebuffer_size_callback(GLFWwindow* window, int width, int height);
+void processInput(GLFWwindow* window) {
+  if (glfwGetKey(window, GLFW_KEY_ESCAPE) == GLFW_PRESS)
+    glfwSetWindowShouldClose(window, true);
+}
 int main() {
-  printf("work");
   GLFWwindow* window;
   if (!glfwInit()) {
     printf("GLFW Initialization failed\n");
@@ -29,10 +34,17 @@ int main() {
   }
   glViewport(0, 0, 800, 600);
   glfwSetFramebufferSizeCallback(window, framebuffer_size_callback);
+
+  unsigned int shader = buildShader(
+      createShader("shaders/base_vertex.glsl", GL_VERTEX_SHADER),
+      createShader("shaders/base_fragment.glsl", GL_FRAGMENT_SHADER));
   while (!glfwWindowShouldClose(window)) {
-    glfwSwapBuffers(window);
     glfwPollEvents();
+    processInput(window);
+    glUseProgram(shader);
+    glfwSwapBuffers(window);
   }
+  glDeleteProgram(shader);
   glfwTerminate();
 
   return 0;

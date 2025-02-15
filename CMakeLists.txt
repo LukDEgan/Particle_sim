@@ -7,7 +7,9 @@ link_directories(dependencies/lib)
 
 add_executable(Particle_Sim 
     src/main.c 
-    src/glad.c)
+    src/glad.c
+    src/util.c
+    src/shader_gen.c)
 
 target_include_directories(Particle_Sim PRIVATE dependencies/include)
 
