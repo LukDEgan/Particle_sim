@@ -31,7 +31,7 @@ CMakeFiles/Particle_Sim.dir/src/shader_gen.c.o: \
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/_types/_uintmax_t.h \
  /Users/lukeegan/Documents/Projects/Particle_sim/dependencies/include/GLFW/glfw3.h \
  /opt/homebrew/Cellar/gcc/12.2.0/lib/gcc/current/gcc/aarch64-apple-darwin21/12/include/stddef.h \
- /Users/lukeegan/Documents/Projects/Particle_sim/src/shader_gen.h \
+ /Users/lukeegan/Documents/Projects/Particle_sim/src/headers/shader_gen.h \
  /opt/homebrew/Cellar/gcc/12.2.0/lib/gcc/current/gcc/aarch64-apple-darwin21/12/include-fixed/stdio.h \
  /opt/homebrew/Cellar/gcc/12.2.0/lib/gcc/current/gcc/aarch64-apple-darwin21/12/include/stdarg.h \
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/_stdio.h \
@@ -48,4 +48,4 @@ CMakeFiles/Particle_Sim.dir/src/shader_gen.c.o: \
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_ssize_t.h \
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/secure/_stdio.h \
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/secure/_common.h \
- /Users/lukeegan/Documents/Projects/Particle_sim/src/util.h
+ /Users/lukeegan/Documents/Projects/Particle_sim/src/headers/util.h

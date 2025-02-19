@@ -72,19 +72,19 @@ include CMakeFiles/Particle_Sim.dir/flags.make
 CMakeFiles/Particle_Sim.dir/codegen:
 .PHONY : CMakeFiles/Particle_Sim.dir/codegen
 
-CMakeFiles/Particle_Sim.dir/src/main.c.o: CMakeFiles/Particle_Sim.dir/flags.make
-CMakeFiles/Particle_Sim.dir/src/main.c.o: /Users/lukeegan/Documents/Projects/Particle_sim/src/main.c
-CMakeFiles/Particle_Sim.dir/src/main.c.o: CMakeFiles/Particle_Sim.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/lukeegan/Documents/Projects/Particle_sim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/Particle_Sim.dir/src/main.c.o"
-	/opt/homebrew/bin/aarch64-apple-darwin21-gcc-12 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Particle_Sim.dir/src/main.c.o -MF CMakeFiles/Particle_Sim.dir/src/main.c.o.d -o CMakeFiles/Particle_Sim.dir/src/main.c.o -c /Users/lukeegan/Documents/Projects/Particle_sim/src/main.c
+CMakeFiles/Particle_Sim.dir/src/main.cpp.o: CMakeFiles/Particle_Sim.dir/flags.make
+CMakeFiles/Particle_Sim.dir/src/main.cpp.o: /Users/lukeegan/Documents/Projects/Particle_sim/src/main.cpp
+CMakeFiles/Particle_Sim.dir/src/main.cpp.o: CMakeFiles/Particle_Sim.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/lukeegan/Documents/Projects/Particle_sim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Particle_Sim.dir/src/main.cpp.o"
+	/opt/homebrew/bin/aarch64-apple-darwin21-g++-12 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Particle_Sim.dir/src/main.cpp.o -MF CMakeFiles/Particle_Sim.dir/src/main.cpp.o.d -o CMakeFiles/Particle_Sim.dir/src/main.cpp.o -c /Users/lukeegan/Documents/Projects/Particle_sim/src/main.cpp
 
-CMakeFiles/Particle_Sim.dir/src/main.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/Particle_Sim.dir/src/main.c.i"
-	/opt/homebrew/bin/aarch64-apple-darwin21-gcc-12 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/lukeegan/Documents/Projects/Particle_sim/src/main.c > CMakeFiles/Particle_Sim.dir/src/main.c.i
+CMakeFiles/Particle_Sim.dir/src/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Particle_Sim.dir/src/main.cpp.i"
+	/opt/homebrew/bin/aarch64-apple-darwin21-g++-12 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/lukeegan/Documents/Projects/Particle_sim/src/main.cpp > CMakeFiles/Particle_Sim.dir/src/main.cpp.i
 
-CMakeFiles/Particle_Sim.dir/src/main.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/Particle_Sim.dir/src/main.c.s"
-	/opt/homebrew/bin/aarch64-apple-darwin21-gcc-12 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/lukeegan/Documents/Projects/Particle_sim/src/main.c -o CMakeFiles/Particle_Sim.dir/src/main.c.s
+CMakeFiles/Particle_Sim.dir/src/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Particle_Sim.dir/src/main.cpp.s"
+	/opt/homebrew/bin/aarch64-apple-darwin21-g++-12 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/lukeegan/Documents/Projects/Particle_sim/src/main.cpp -o CMakeFiles/Particle_Sim.dir/src/main.cpp.s
 
 CMakeFiles/Particle_Sim.dir/src/glad.c.o: CMakeFiles/Particle_Sim.dir/flags.make
 CMakeFiles/Particle_Sim.dir/src/glad.c.o: /Users/lukeegan/Documents/Projects/Particle_sim/src/glad.c
@@ -100,52 +100,20 @@ CMakeFiles/Particle_Sim.dir/src/glad.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/Particle_Sim.dir/src/glad.c.s"
 	/opt/homebrew/bin/aarch64-apple-darwin21-gcc-12 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/lukeegan/Documents/Projects/Particle_sim/src/glad.c -o CMakeFiles/Particle_Sim.dir/src/glad.c.s
 
-CMakeFiles/Particle_Sim.dir/src/util.c.o: CMakeFiles/Particle_Sim.dir/flags.make
-CMakeFiles/Particle_Sim.dir/src/util.c.o: /Users/lukeegan/Documents/Projects/Particle_sim/src/util.c
-CMakeFiles/Particle_Sim.dir/src/util.c.o: CMakeFiles/Particle_Sim.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/lukeegan/Documents/Projects/Particle_sim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/Particle_Sim.dir/src/util.c.o"
-	/opt/homebrew/bin/aarch64-apple-darwin21-gcc-12 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Particle_Sim.dir/src/util.c.o -MF CMakeFiles/Particle_Sim.dir/src/util.c.o.d -o CMakeFiles/Particle_Sim.dir/src/util.c.o -c /Users/lukeegan/Documents/Projects/Particle_sim/src/util.c
-
-CMakeFiles/Particle_Sim.dir/src/util.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/Particle_Sim.dir/src/util.c.i"
-	/opt/homebrew/bin/aarch64-apple-darwin21-gcc-12 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/lukeegan/Documents/Projects/Particle_sim/src/util.c > CMakeFiles/Particle_Sim.dir/src/util.c.i
-
-CMakeFiles/Particle_Sim.dir/src/util.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/Particle_Sim.dir/src/util.c.s"
-	/opt/homebrew/bin/aarch64-apple-darwin21-gcc-12 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/lukeegan/Documents/Projects/Particle_sim/src/util.c -o CMakeFiles/Particle_Sim.dir/src/util.c.s
-
-CMakeFiles/Particle_Sim.dir/src/shader_gen.c.o: CMakeFiles/Particle_Sim.dir/flags.make
-CMakeFiles/Particle_Sim.dir/src/shader_gen.c.o: /Users/lukeegan/Documents/Projects/Particle_sim/src/shader_gen.c
-CMakeFiles/Particle_Sim.dir/src/shader_gen.c.o: CMakeFiles/Particle_Sim.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/lukeegan/Documents/Projects/Particle_sim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/Particle_Sim.dir/src/shader_gen.c.o"
-	/opt/homebrew/bin/aarch64-apple-darwin21-gcc-12 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Particle_Sim.dir/src/shader_gen.c.o -MF CMakeFiles/Particle_Sim.dir/src/shader_gen.c.o.d -o CMakeFiles/Particle_Sim.dir/src/shader_gen.c.o -c /Users/lukeegan/Documents/Projects/Particle_sim/src/shader_gen.c
-
-CMakeFiles/Particle_Sim.dir/src/shader_gen.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/Particle_Sim.dir/src/shader_gen.c.i"
-	/opt/homebrew/bin/aarch64-apple-darwin21-gcc-12 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/lukeegan/Documents/Projects/Particle_sim/src/shader_gen.c > CMakeFiles/Particle_Sim.dir/src/shader_gen.c.i
-
-CMakeFiles/Particle_Sim.dir/src/shader_gen.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/Particle_Sim.dir/src/shader_gen.c.s"
-	/opt/homebrew/bin/aarch64-apple-darwin21-gcc-12 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/lukeegan/Documents/Projects/Particle_sim/src/shader_gen.c -o CMakeFiles/Particle_Sim.dir/src/shader_gen.c.s
-
 # Object files for target Particle_Sim
 Particle_Sim_OBJECTS = \
-"CMakeFiles/Particle_Sim.dir/src/main.c.o" \
-"CMakeFiles/Particle_Sim.dir/src/glad.c.o" \
-"CMakeFiles/Particle_Sim.dir/src/util.c.o" \
-"CMakeFiles/Particle_Sim.dir/src/shader_gen.c.o"
+"CMakeFiles/Particle_Sim.dir/src/main.cpp.o" \
+"CMakeFiles/Particle_Sim.dir/src/glad.c.o"
 
 # External object files for target Particle_Sim
 Particle_Sim_EXTERNAL_OBJECTS =
 
-Particle_Sim: CMakeFiles/Particle_Sim.dir/src/main.c.o
+Particle_Sim: CMakeFiles/Particle_Sim.dir/src/main.cpp.o
 Particle_Sim: CMakeFiles/Particle_Sim.dir/src/glad.c.o
-Particle_Sim: CMakeFiles/Particle_Sim.dir/src/util.c.o
-Particle_Sim: CMakeFiles/Particle_Sim.dir/src/shader_gen.c.o
 Particle_Sim: CMakeFiles/Particle_Sim.dir/build.make
 Particle_Sim: /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/System/Library/Frameworks/OpenGL.framework
 Particle_Sim: CMakeFiles/Particle_Sim.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/lukeegan/Documents/Projects/Particle_sim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking C executable Particle_Sim"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/lukeegan/Documents/Projects/Particle_sim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable Particle_Sim"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Particle_Sim.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

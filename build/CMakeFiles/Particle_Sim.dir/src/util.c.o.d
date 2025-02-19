@@ -1,6 +1,6 @@
 CMakeFiles/Particle_Sim.dir/src/util.c.o: \
  /Users/lukeegan/Documents/Projects/Particle_sim/src/util.c \
- /Users/lukeegan/Documents/Projects/Particle_sim/src/util.h \
+ /Users/lukeegan/Documents/Projects/Particle_sim/src/headers/util.h \
  /opt/homebrew/Cellar/gcc/12.2.0/lib/gcc/current/gcc/aarch64-apple-darwin21/12/include-fixed/stdio.h \
  /opt/homebrew/Cellar/gcc/12.2.0/lib/gcc/current/gcc/aarch64-apple-darwin21/12/include/stdarg.h \
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/_stdio.h \

@@ -47,9 +47,6 @@ CMakeFiles/Particle_Sim.dir/src/main.c.o: \
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/_types/_uintmax_t.h \
  /Users/lukeegan/Documents/Projects/Particle_sim/dependencies/include/GLFW/glfw3.h \
  /opt/homebrew/Cellar/gcc/12.2.0/lib/gcc/current/gcc/aarch64-apple-darwin21/12/include/stddef.h \
- /Users/lukeegan/Documents/Projects/Particle_sim/src/shader_gen.h \
- /opt/homebrew/Cellar/gcc/12.2.0/lib/gcc/current/gcc/aarch64-apple-darwin21/12/include/stdbool.h \
- /Users/lukeegan/Documents/Projects/Particle_sim/src/camera.h \
  /Users/lukeegan/Documents/Projects/Particle_sim/dependencies/include/cglm/cglm.h \
  /Users/lukeegan/Documents/Projects/Particle_sim/dependencies/include/cglm/common.h \
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/stdlib.h \
@@ -88,6 +85,7 @@ CMakeFiles/Particle_Sim.dir/src/main.c.o: \
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_mode_t.h \
  /opt/homebrew/Cellar/gcc/12.2.0/lib/gcc/current/gcc/aarch64-apple-darwin21/12/include-fixed/math.h \
  /opt/homebrew/Cellar/gcc/12.2.0/lib/gcc/current/gcc/aarch64-apple-darwin21/12/include/float.h \
+ /opt/homebrew/Cellar/gcc/12.2.0/lib/gcc/current/gcc/aarch64-apple-darwin21/12/include/stdbool.h \
  /Users/lukeegan/Documents/Projects/Particle_sim/dependencies/include/cglm/types.h \
  /opt/homebrew/Cellar/gcc/12.2.0/lib/gcc/current/gcc/aarch64-apple-darwin21/12/include/stdalign.h \
  /Users/lukeegan/Documents/Projects/Particle_sim/dependencies/include/cglm/simd/intrin.h \
@@ -156,4 +154,6 @@ CMakeFiles/Particle_Sim.dir/src/main.c.o: \
  /Users/lukeegan/Documents/Projects/Particle_sim/dependencies/include/cglm/curve.h \
  /Users/lukeegan/Documents/Projects/Particle_sim/dependencies/include/cglm/bezier.h \
  /Users/lukeegan/Documents/Projects/Particle_sim/dependencies/include/cglm/ray.h \
- /Users/lukeegan/Documents/Projects/Particle_sim/dependencies/include/cglm/affine2d.h
+ /Users/lukeegan/Documents/Projects/Particle_sim/dependencies/include/cglm/affine2d.h \
+ /Users/lukeegan/Documents/Projects/Particle_sim/src/headers/shader_gen.h \
+ /Users/lukeegan/Documents/Projects/Particle_sim/src/headers/camera.h

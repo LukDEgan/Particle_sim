@@ -153,77 +153,29 @@ src/glad.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Particle_Sim.dir/build.make CMakeFiles/Particle_Sim.dir/src/glad.c.s
 .PHONY : src/glad.c.s
 
-src/main.o: src/main.c.o
+src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
 # target to build an object file
-src/main.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Particle_Sim.dir/build.make CMakeFiles/Particle_Sim.dir/src/main.c.o
-.PHONY : src/main.c.o
+src/main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Particle_Sim.dir/build.make CMakeFiles/Particle_Sim.dir/src/main.cpp.o
+.PHONY : src/main.cpp.o
 
-src/main.i: src/main.c.i
+src/main.i: src/main.cpp.i
 .PHONY : src/main.i
 
 # target to preprocess a source file
-src/main.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Particle_Sim.dir/build.make CMakeFiles/Particle_Sim.dir/src/main.c.i
-.PHONY : src/main.c.i
+src/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Particle_Sim.dir/build.make CMakeFiles/Particle_Sim.dir/src/main.cpp.i
+.PHONY : src/main.cpp.i
 
-src/main.s: src/main.c.s
+src/main.s: src/main.cpp.s
 .PHONY : src/main.s
 
 # target to generate assembly for a file
-src/main.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Particle_Sim.dir/build.make CMakeFiles/Particle_Sim.dir/src/main.c.s
-.PHONY : src/main.c.s
-
-src/shader_gen.o: src/shader_gen.c.o
-.PHONY : src/shader_gen.o
-
-# target to build an object file
-src/shader_gen.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Particle_Sim.dir/build.make CMakeFiles/Particle_Sim.dir/src/shader_gen.c.o
-.PHONY : src/shader_gen.c.o
-
-src/shader_gen.i: src/shader_gen.c.i
-.PHONY : src/shader_gen.i
-
-# target to preprocess a source file
-src/shader_gen.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Particle_Sim.dir/build.make CMakeFiles/Particle_Sim.dir/src/shader_gen.c.i
-.PHONY : src/shader_gen.c.i
-
-src/shader_gen.s: src/shader_gen.c.s
-.PHONY : src/shader_gen.s
-
-# target to generate assembly for a file
-src/shader_gen.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Particle_Sim.dir/build.make CMakeFiles/Particle_Sim.dir/src/shader_gen.c.s
-.PHONY : src/shader_gen.c.s
-
-src/util.o: src/util.c.o
-.PHONY : src/util.o
-
-# target to build an object file
-src/util.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Particle_Sim.dir/build.make CMakeFiles/Particle_Sim.dir/src/util.c.o
-.PHONY : src/util.c.o
-
-src/util.i: src/util.c.i
-.PHONY : src/util.i
-
-# target to preprocess a source file
-src/util.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Particle_Sim.dir/build.make CMakeFiles/Particle_Sim.dir/src/util.c.i
-.PHONY : src/util.c.i
-
-src/util.s: src/util.c.s
-.PHONY : src/util.s
-
-# target to generate assembly for a file
-src/util.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Particle_Sim.dir/build.make CMakeFiles/Particle_Sim.dir/src/util.c.s
-.PHONY : src/util.c.s
+src/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Particle_Sim.dir/build.make CMakeFiles/Particle_Sim.dir/src/main.cpp.s
+.PHONY : src/main.cpp.s
 
 # Help Target
 help:
@@ -240,12 +192,6 @@ help:
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
-	@echo "... src/shader_gen.o"
-	@echo "... src/shader_gen.i"
-	@echo "... src/shader_gen.s"
-	@echo "... src/util.o"
-	@echo "... src/util.i"
-	@echo "... src/util.s"
 .PHONY : help
 
 
