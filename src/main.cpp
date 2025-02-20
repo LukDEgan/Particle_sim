@@ -72,62 +72,75 @@ int main() {
 
   // build and compile shaders
   // -------------------------
-  Shader ourShader("../shaders/model_vertex.glsl",
-                   "../shaders/model_fragment.glsl");
-
+  Shader sphereShader("../shaders/model_vertex.glsl",
+                      "../shaders/model_fragment.glsl");
+  Shader cubeShader("../shaders/base_vertex.glsl",
+                    "../shaders/base_fragment.glsl");
   // load mesh
   // -----------
-  Mesh sphere("../models/monkey.obj");
+  Mesh sphere("../models/sphere.obj");
+  Mesh Cube("../models/cube.obj");
 
   // draw in wireframe
-  glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
+  // glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
 
   // render loop
   // -----------
   while (!glfwWindowShouldClose(window)) {
-    // per-frame time logic
-    // --------------------
+    // Per-frame timing
     float currentFrame = static_cast<float>(glfwGetTime());
     deltaTime = currentFrame - lastFrame;
     lastFrame = currentFrame;
 
-    // input
-    // -----
+    // Input
     processInput(window);
 
-    // render
-    // ------
-    glClearColor(0.1, 0.1, 0.1, 1.0);
+    // Clear buffers
+    glClearColor(0.1f, 0.1f, 0.1f, 1.0f);
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
-    // don't forget to enable shader before setting uniforms
-    ourShader.use();
-
-    // view/projection transformations
+    // View/Projection Matrices
     glm::mat4 projection =
         glm::perspective(glm::radians(camera.Zoom),
                          (float)SCR_WIDTH / (float)SCR_HEIGHT, 0.1f, 100.0f);
     glm::mat4 view = camera.GetViewMatrix();
-    ourShader.setMat4("projection", projection);
-    ourShader.setMat4("view", view);
 
-    // render the loaded model
-    glm::mat4 model = glm::mat4(1.0f);
-    model = glm::translate(
-        model,
-        glm::vec3(
-            0.0f, 0.0f,
-            0.0f));  // translate it down so it's at the center of the scene
-    model = glm::scale(
-        model,
-        glm::vec3(1.0f, 1.0f,
-                  1.0f));  // it's a bit too big for our scene, so scale it down
-    ourShader.setMat4("model", model);
-    sphere.Draw(ourShader);
+    // Cube (Transparent Container)
+    // Cube (Transparent Container)
+    cubeShader.use();
+    cubeShader.setVec4(
+        "color",
+        glm::vec4(1.0f, 0.0f, 1.0f, 0.3f));  // Adjust alpha for visibility
+    cubeShader.setMat4("projection", projection);
+    cubeShader.setMat4("view", view);
 
-    // glfw: swap buffers and poll IO events (keys pressed/released, mouse moved
-    // etc.)
-    // -------------------------------------------------------------------------------
+    glm::mat4 cubeModel = glm::mat4(1.0f);
+    cubeModel =
+        glm::scale(cubeModel, glm::vec3(1.5f, 1.5f, 1.5f));  // Scale container
+    cubeShader.setMat4("model", cubeModel);
+
+    // Disable depth writing but keep depth testing
+    glDepthMask(GL_FALSE);
+    glEnable(GL_BLEND);
+    glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
+    glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
+    Cube.Draw(cubeShader);
+    glPolygonMode(GL_FRONT_AND_BACK, GL_FILL);
+    glDepthMask(GL_TRUE);  // Re-enable depth writing
+    glDisable(GL_BLEND);
+    // Sphere (Inside the Cube)
+    sphereShader.use();
+    sphereShader.setMat4("projection", projection);
+    sphereShader.setMat4("view", view);
+
+    glm::mat4 sphereModel = glm::mat4(1.0f);
+    sphereModel = glm::scale(sphereModel,
+                             glm::vec3(0.1f, 0.1f, 0.1f));  // Scale down sphere
+    sphereShader.setMat4("model", sphereModel);
+
+    sphere.Draw(sphereShader);
+
+    // Swap buffers and poll events
     glfwSwapBuffers(window);
     glfwPollEvents();
   }
@@ -153,6 +166,10 @@ void processInput(GLFWwindow* window) {
     camera.ProcessKeyboard(LEFT, deltaTime);
   if (glfwGetKey(window, GLFW_KEY_D) == GLFW_PRESS)
     camera.ProcessKeyboard(RIGHT, deltaTime);
+  if (glfwGetKey(window, GLFW_KEY_SPACE) == GLFW_PRESS)
+    camera.ProcessKeyboard(UP, deltaTime);
+  if (glfwGetKey(window, GLFW_KEY_LEFT_CONTROL) == GLFW_PRESS)
+    camera.ProcessKeyboard(DOWN, deltaTime);
 }
 
 // glfw: whenever the window size changed (by OS or user resize) this callback

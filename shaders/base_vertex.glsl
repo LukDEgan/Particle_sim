@@ -1,13 +1,18 @@
 #version 330 core
-layout (location = 0) in vec3 aPos;
-layout (location = 1) in vec3 ourColor;
-out vec3 color;
-uniform mat4 transform;
+
+layout (location = 0) in vec3 vertexPos;
+layout (location = 1) in vec3 vertexNormal;
+layout (location = 2) in vec2 vertexTexCoord;
+
 uniform mat4 model;
-uniform mat4 view; 
+uniform mat4 view;
 uniform mat4 projection;
+
+out vec3 fragmentPos;
+out vec3 fragmentVertexNormal;
+out vec2 fragmentTexCoord;
+
 void main()
 {
-gl_Position = projection * view * model * vec4(aPos, 1.0);
-color = ourColor;
+    gl_Position = projection * view * model * vec4(vertexPos, 1.0);
 }

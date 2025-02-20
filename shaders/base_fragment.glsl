@@ -1,7 +1,13 @@
 #version 330 core
-in vec3 color;
-out vec4 FragColor;
+
+in vec3 fragmentVertexNormal;
+in vec2 fragmentTexCoord;
+
+out vec4 color;
+
+
 void main()
 {
-    FragColor = vec4(color, 1.0);
+   
+    color = vec4(1.0, 1.0, 1.0, 0.1 );
 }
