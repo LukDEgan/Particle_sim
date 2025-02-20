@@ -1,46 +1,32 @@
 CMakeFiles/Particle_Sim.dir/src/main.cpp.o: \
  /Users/lukeegan/Documents/Projects/Particle_sim/src/main.cpp \
- /opt/homebrew/Cellar/gcc/12.2.0/lib/gcc/current/gcc/aarch64-apple-darwin21/12/include-fixed/stdio.h \
- /opt/homebrew/Cellar/gcc/12.2.0/lib/gcc/current/gcc/aarch64-apple-darwin21/12/include/stdarg.h \
- /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/_stdio.h \
- /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/cdefs.h \
- /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_symbol_aliasing.h \
- /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_posix_availability.h \
- /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/Availability.h \
- /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/AvailabilityVersions.h \
- /opt/homebrew/Cellar/gcc/12.2.0/lib/gcc/current/gcc/aarch64-apple-darwin21/12/include-fixed/AvailabilityInternal.h \
- /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/_types.h \
- /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types.h \
- /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/machine/_types.h \
- /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/arm/_types.h \
- /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_pthread/_pthread_types.h \
- /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_va_list.h \
- /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/machine/types.h \
- /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/arm/types.h \
- /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_int8_t.h \
- /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_int16_t.h \
- /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_int32_t.h \
- /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_int64_t.h \
- /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_u_int8_t.h \
- /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_u_int16_t.h \
- /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_u_int32_t.h \
- /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_u_int64_t.h \
- /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_intptr_t.h \
- /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_uintptr_t.h \
- /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_size_t.h \
- /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_null.h \
- /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/stdio.h \
- /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/_ctermid.h \
- /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_off_t.h \
- /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_ssize_t.h \
  /Users/lukeegan/Documents/Projects/Particle_sim/dependencies/include/glad/glad.h \
  /Users/lukeegan/Documents/Projects/Particle_sim/dependencies/include/KHR/khrplatform.h \
  /opt/homebrew/Cellar/gcc/12.2.0/lib/gcc/current/gcc/aarch64-apple-darwin21/12/include/stdint.h \
  /opt/homebrew/Cellar/gcc/12.2.0/lib/gcc/current/gcc/aarch64-apple-darwin21/12/include-fixed/stdint.h \
+ /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_int8_t.h \
+ /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_int16_t.h \
+ /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_int32_t.h \
+ /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_int64_t.h \
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/_types/_uint8_t.h \
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/_types/_uint16_t.h \
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/_types/_uint32_t.h \
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/_types/_uint64_t.h \
+ /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types.h \
+ /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/cdefs.h \
+ /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_symbol_aliasing.h \
+ /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_posix_availability.h \
+ /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/machine/_types.h \
+ /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/arm/_types.h \
+ /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_pthread/_pthread_types.h \
+ /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_intptr_t.h \
+ /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/machine/types.h \
+ /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/arm/types.h \
+ /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_u_int8_t.h \
+ /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_u_int16_t.h \
+ /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_u_int32_t.h \
+ /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_u_int64_t.h \
+ /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_uintptr_t.h \
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/_types/_intmax_t.h \
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/_types/_uintmax_t.h \
  /Users/lukeegan/Documents/Projects/Particle_sim/dependencies/include/GLFW/glfw3.h \
@@ -55,8 +41,12 @@ CMakeFiles/Particle_Sim.dir/src/main.cpp.o: \
  /opt/homebrew/Cellar/gcc/12.2.0/include/c++/12/bits/cpp_type_traits.h \
  /opt/homebrew/Cellar/gcc/12.2.0/include/c++/12/ext/type_traits.h \
  /opt/homebrew/Cellar/gcc/12.2.0/lib/gcc/current/gcc/aarch64-apple-darwin21/12/include-fixed/math.h \
+ /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/Availability.h \
+ /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/AvailabilityVersions.h \
+ /opt/homebrew/Cellar/gcc/12.2.0/lib/gcc/current/gcc/aarch64-apple-darwin21/12/include-fixed/AvailabilityInternal.h \
  /opt/homebrew/Cellar/gcc/12.2.0/include/c++/12/bits/std_abs.h \
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/stdlib.h \
+ /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/_types.h \
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/wait.h \
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_pid_t.h \
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_id_t.h \
@@ -72,6 +62,7 @@ CMakeFiles/Particle_Sim.dir/src/main.cpp.o: \
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_sigaltstack.h \
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_ucontext.h \
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_sigset_t.h \
+ /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_size_t.h \
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_uid_t.h \
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/resource.h \
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_timeval.h \
@@ -85,6 +76,7 @@ CMakeFiles/Particle_Sim.dir/src/main.cpp.o: \
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_ct_rune_t.h \
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_rune_t.h \
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_wchar_t.h \
+ /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_null.h \
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/malloc/_malloc.h \
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/malloc/_malloc_type.h \
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/malloc/_ptrcheck.h \
@@ -236,9 +228,10 @@ CMakeFiles/Particle_Sim.dir/src/main.cpp.o: \
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/string.h \
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_rsize_t.h \
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_errno_t.h \
+ /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_ssize_t.h \
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/strings.h \
  /Users/lukeegan/Documents/Projects/Particle_sim/dependencies/include/glm/gtc/type_ptr.inl \
- /Users/lukeegan/Documents/Projects/Particle_sim/src/headers/shader.h \
+ /Users/lukeegan/Documents/Projects/Particle_sim/dependencies/include/headers/shader.h \
  /opt/homebrew/Cellar/gcc/12.2.0/include/c++/12/string \
  /opt/homebrew/Cellar/gcc/12.2.0/include/c++/12/bits/stringfwd.h \
  /opt/homebrew/Cellar/gcc/12.2.0/include/c++/12/bits/memoryfwd.h \
@@ -247,6 +240,13 @@ CMakeFiles/Particle_Sim.dir/src/main.cpp.o: \
  /opt/homebrew/Cellar/gcc/12.2.0/include/c++/12/cwchar \
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/wchar.h \
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_mbstate_t.h \
+ /opt/homebrew/Cellar/gcc/12.2.0/lib/gcc/current/gcc/aarch64-apple-darwin21/12/include/stdarg.h \
+ /opt/homebrew/Cellar/gcc/12.2.0/lib/gcc/current/gcc/aarch64-apple-darwin21/12/include-fixed/stdio.h \
+ /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/_stdio.h \
+ /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_va_list.h \
+ /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/stdio.h \
+ /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/_ctermid.h \
+ /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_off_t.h \
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/time.h \
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_clock_t.h \
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_time_t.h \
@@ -348,4 +348,22 @@ CMakeFiles/Particle_Sim.dir/src/main.cpp.o: \
  /opt/homebrew/Cellar/gcc/12.2.0/include/c++/12/sstream \
  /opt/homebrew/Cellar/gcc/12.2.0/include/c++/12/bits/sstream.tcc \
  /opt/homebrew/Cellar/gcc/12.2.0/include/c++/12/iostream \
- /opt/homebrew/Cellar/gcc/12.2.0/lib/gcc/current/gcc/aarch64-apple-darwin21/12/include/stdbool.h
+ /Users/lukeegan/Documents/Projects/Particle_sim/dependencies/include/headers/camera.h \
+ /Users/lukeegan/Documents/Projects/Particle_sim/dependencies/include/headers/mesh.h \
+ /opt/homebrew/Cellar/gcc/12.2.0/include/c++/12/vector \
+ /opt/homebrew/Cellar/gcc/12.2.0/include/c++/12/bits/stl_uninitialized.h \
+ /opt/homebrew/Cellar/gcc/12.2.0/include/c++/12/bits/stl_vector.h \
+ /opt/homebrew/Cellar/gcc/12.2.0/include/c++/12/bits/stl_bvector.h \
+ /opt/homebrew/Cellar/gcc/12.2.0/include/c++/12/bits/vector.tcc \
+ /Users/lukeegan/Documents/Projects/Particle_sim/dependencies/include/headers/tiny_obj_loader.h \
+ /opt/homebrew/Cellar/gcc/12.2.0/include/c++/12/map \
+ /opt/homebrew/Cellar/gcc/12.2.0/include/c++/12/bits/stl_tree.h \
+ /opt/homebrew/Cellar/gcc/12.2.0/include/c++/12/ext/aligned_buffer.h \
+ /opt/homebrew/Cellar/gcc/12.2.0/include/c++/12/bits/node_handle.h \
+ /opt/homebrew/Cellar/gcc/12.2.0/include/c++/12/bits/stl_map.h \
+ /opt/homebrew/Cellar/gcc/12.2.0/include/c++/12/tuple \
+ /opt/homebrew/Cellar/gcc/12.2.0/include/c++/12/bits/uses_allocator.h \
+ /opt/homebrew/Cellar/gcc/12.2.0/include/c++/12/bits/stl_multimap.h \
+ /opt/homebrew/Cellar/gcc/12.2.0/include/c++/12/bits/erase_if.h \
+ /opt/homebrew/Cellar/gcc/12.2.0/include/c++/12/utility \
+ /opt/homebrew/Cellar/gcc/12.2.0/include/c++/12/bits/stl_relops.h

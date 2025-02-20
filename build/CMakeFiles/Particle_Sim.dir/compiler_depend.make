@@ -307,7 +307,10 @@ CMakeFiles/Particle_Sim.dir/src/main.cpp.o: /Users/lukeegan/Documents/Projects/P
   /Users/lukeegan/Documents/Projects/Particle_sim/dependencies/include/glm/vec3.hpp \
   /Users/lukeegan/Documents/Projects/Particle_sim/dependencies/include/glm/vec4.hpp \
   /Users/lukeegan/Documents/Projects/Particle_sim/dependencies/include/glm/vector_relational.hpp \
-  /Users/lukeegan/Documents/Projects/Particle_sim/src/headers/shader.h \
+  /Users/lukeegan/Documents/Projects/Particle_sim/dependencies/include/headers/camera.h \
+  /Users/lukeegan/Documents/Projects/Particle_sim/dependencies/include/headers/mesh.h \
+  /Users/lukeegan/Documents/Projects/Particle_sim/dependencies/include/headers/shader.h \
+  /Users/lukeegan/Documents/Projects/Particle_sim/dependencies/include/headers/tiny_obj_loader.h \
   /opt/homebrew/Cellar/gcc/12.2.0/include/c++/12/aarch64-apple-darwin21/bits/atomic_word.h \
   /opt/homebrew/Cellar/gcc/12.2.0/include/c++/12/aarch64-apple-darwin21/bits/basic_file.h \
   /opt/homebrew/Cellar/gcc/12.2.0/include/c++/12/aarch64-apple-darwin21/bits/c++allocator.h \
@@ -335,6 +338,7 @@ CMakeFiles/Particle_Sim.dir/src/main.cpp.o: /Users/lukeegan/Documents/Projects/P
   /opt/homebrew/Cellar/gcc/12.2.0/include/c++/12/bits/cpp_type_traits.h \
   /opt/homebrew/Cellar/gcc/12.2.0/include/c++/12/bits/cxxabi_forced.h \
   /opt/homebrew/Cellar/gcc/12.2.0/include/c++/12/bits/cxxabi_init_exception.h \
+  /opt/homebrew/Cellar/gcc/12.2.0/include/c++/12/bits/erase_if.h \
   /opt/homebrew/Cellar/gcc/12.2.0/include/c++/12/bits/exception.h \
   /opt/homebrew/Cellar/gcc/12.2.0/include/c++/12/bits/exception_defines.h \
   /opt/homebrew/Cellar/gcc/12.2.0/include/c++/12/bits/exception_ptr.h \
@@ -354,6 +358,7 @@ CMakeFiles/Particle_Sim.dir/src/main.cpp.o: /Users/lukeegan/Documents/Projects/P
   /opt/homebrew/Cellar/gcc/12.2.0/include/c++/12/bits/move.h \
   /opt/homebrew/Cellar/gcc/12.2.0/include/c++/12/bits/nested_exception.h \
   /opt/homebrew/Cellar/gcc/12.2.0/include/c++/12/bits/new_allocator.h \
+  /opt/homebrew/Cellar/gcc/12.2.0/include/c++/12/bits/node_handle.h \
   /opt/homebrew/Cellar/gcc/12.2.0/include/c++/12/bits/ostream.tcc \
   /opt/homebrew/Cellar/gcc/12.2.0/include/c++/12/bits/ostream_insert.h \
   /opt/homebrew/Cellar/gcc/12.2.0/include/c++/12/bits/postypes.h \
@@ -365,17 +370,26 @@ CMakeFiles/Particle_Sim.dir/src/main.cpp.o: /Users/lukeegan/Documents/Projects/P
   /opt/homebrew/Cellar/gcc/12.2.0/include/c++/12/bits/sstream.tcc \
   /opt/homebrew/Cellar/gcc/12.2.0/include/c++/12/bits/std_abs.h \
   /opt/homebrew/Cellar/gcc/12.2.0/include/c++/12/bits/stl_algobase.h \
+  /opt/homebrew/Cellar/gcc/12.2.0/include/c++/12/bits/stl_bvector.h \
   /opt/homebrew/Cellar/gcc/12.2.0/include/c++/12/bits/stl_construct.h \
   /opt/homebrew/Cellar/gcc/12.2.0/include/c++/12/bits/stl_function.h \
   /opt/homebrew/Cellar/gcc/12.2.0/include/c++/12/bits/stl_iterator.h \
   /opt/homebrew/Cellar/gcc/12.2.0/include/c++/12/bits/stl_iterator_base_funcs.h \
   /opt/homebrew/Cellar/gcc/12.2.0/include/c++/12/bits/stl_iterator_base_types.h \
+  /opt/homebrew/Cellar/gcc/12.2.0/include/c++/12/bits/stl_map.h \
+  /opt/homebrew/Cellar/gcc/12.2.0/include/c++/12/bits/stl_multimap.h \
   /opt/homebrew/Cellar/gcc/12.2.0/include/c++/12/bits/stl_pair.h \
+  /opt/homebrew/Cellar/gcc/12.2.0/include/c++/12/bits/stl_relops.h \
+  /opt/homebrew/Cellar/gcc/12.2.0/include/c++/12/bits/stl_tree.h \
+  /opt/homebrew/Cellar/gcc/12.2.0/include/c++/12/bits/stl_uninitialized.h \
+  /opt/homebrew/Cellar/gcc/12.2.0/include/c++/12/bits/stl_vector.h \
   /opt/homebrew/Cellar/gcc/12.2.0/include/c++/12/bits/streambuf.tcc \
   /opt/homebrew/Cellar/gcc/12.2.0/include/c++/12/bits/streambuf_iterator.h \
   /opt/homebrew/Cellar/gcc/12.2.0/include/c++/12/bits/string_view.tcc \
   /opt/homebrew/Cellar/gcc/12.2.0/include/c++/12/bits/stringfwd.h \
+  /opt/homebrew/Cellar/gcc/12.2.0/include/c++/12/bits/uses_allocator.h \
   /opt/homebrew/Cellar/gcc/12.2.0/include/c++/12/bits/utility.h \
+  /opt/homebrew/Cellar/gcc/12.2.0/include/c++/12/bits/vector.tcc \
   /opt/homebrew/Cellar/gcc/12.2.0/include/c++/12/cassert \
   /opt/homebrew/Cellar/gcc/12.2.0/include/c++/12/cctype \
   /opt/homebrew/Cellar/gcc/12.2.0/include/c++/12/cerrno \
@@ -393,6 +407,7 @@ CMakeFiles/Particle_Sim.dir/src/main.cpp.o: /Users/lukeegan/Documents/Projects/P
   /opt/homebrew/Cellar/gcc/12.2.0/include/c++/12/debug/assertions.h \
   /opt/homebrew/Cellar/gcc/12.2.0/include/c++/12/debug/debug.h \
   /opt/homebrew/Cellar/gcc/12.2.0/include/c++/12/exception \
+  /opt/homebrew/Cellar/gcc/12.2.0/include/c++/12/ext/aligned_buffer.h \
   /opt/homebrew/Cellar/gcc/12.2.0/include/c++/12/ext/alloc_traits.h \
   /opt/homebrew/Cellar/gcc/12.2.0/include/c++/12/ext/atomicity.h \
   /opt/homebrew/Cellar/gcc/12.2.0/include/c++/12/ext/numeric_traits.h \
@@ -405,6 +420,7 @@ CMakeFiles/Particle_Sim.dir/src/main.cpp.o: /Users/lukeegan/Documents/Projects/P
   /opt/homebrew/Cellar/gcc/12.2.0/include/c++/12/iostream \
   /opt/homebrew/Cellar/gcc/12.2.0/include/c++/12/istream \
   /opt/homebrew/Cellar/gcc/12.2.0/include/c++/12/limits \
+  /opt/homebrew/Cellar/gcc/12.2.0/include/c++/12/map \
   /opt/homebrew/Cellar/gcc/12.2.0/include/c++/12/new \
   /opt/homebrew/Cellar/gcc/12.2.0/include/c++/12/ostream \
   /opt/homebrew/Cellar/gcc/12.2.0/include/c++/12/pstl/pstl_config.h \
@@ -427,8 +443,11 @@ CMakeFiles/Particle_Sim.dir/src/main.cpp.o: /Users/lukeegan/Documents/Projects/P
   /opt/homebrew/Cellar/gcc/12.2.0/include/c++/12/tr1/poly_laguerre.tcc \
   /opt/homebrew/Cellar/gcc/12.2.0/include/c++/12/tr1/riemann_zeta.tcc \
   /opt/homebrew/Cellar/gcc/12.2.0/include/c++/12/tr1/special_function_util.h \
+  /opt/homebrew/Cellar/gcc/12.2.0/include/c++/12/tuple \
   /opt/homebrew/Cellar/gcc/12.2.0/include/c++/12/type_traits \
   /opt/homebrew/Cellar/gcc/12.2.0/include/c++/12/typeinfo \
+  /opt/homebrew/Cellar/gcc/12.2.0/include/c++/12/utility \
+  /opt/homebrew/Cellar/gcc/12.2.0/include/c++/12/vector \
   /opt/homebrew/Cellar/gcc/12.2.0/lib/gcc/current/gcc/aarch64-apple-darwin21/12/include-fixed/AvailabilityInternal.h \
   /opt/homebrew/Cellar/gcc/12.2.0/lib/gcc/current/gcc/aarch64-apple-darwin21/12/include-fixed/limits.h \
   /opt/homebrew/Cellar/gcc/12.2.0/lib/gcc/current/gcc/aarch64-apple-darwin21/12/include-fixed/math.h \
@@ -437,7 +456,6 @@ CMakeFiles/Particle_Sim.dir/src/main.cpp.o: /Users/lukeegan/Documents/Projects/P
   /opt/homebrew/Cellar/gcc/12.2.0/lib/gcc/current/gcc/aarch64-apple-darwin21/12/include-fixed/syslimits.h \
   /opt/homebrew/Cellar/gcc/12.2.0/lib/gcc/current/gcc/aarch64-apple-darwin21/12/include/float.h \
   /opt/homebrew/Cellar/gcc/12.2.0/lib/gcc/current/gcc/aarch64-apple-darwin21/12/include/stdarg.h \
-  /opt/homebrew/Cellar/gcc/12.2.0/lib/gcc/current/gcc/aarch64-apple-darwin21/12/include/stdbool.h \
   /opt/homebrew/Cellar/gcc/12.2.0/lib/gcc/current/gcc/aarch64-apple-darwin21/12/include/stddef.h \
   /opt/homebrew/Cellar/gcc/12.2.0/lib/gcc/current/gcc/aarch64-apple-darwin21/12/include/stdint.h
 
@@ -445,6 +463,8 @@ CMakeFiles/Particle_Sim.dir/src/main.cpp.o: /Users/lukeegan/Documents/Projects/P
 /opt/homebrew/Cellar/gcc/12.2.0/lib/gcc/current/gcc/aarch64-apple-darwin21/12/include/float.h:
 
 /opt/homebrew/Cellar/gcc/12.2.0/lib/gcc/current/gcc/aarch64-apple-darwin21/12/include-fixed/limits.h:
+
+/opt/homebrew/Cellar/gcc/12.2.0/include/c++/12/vector:
 
 /opt/homebrew/Cellar/gcc/12.2.0/include/c++/12/tr1/poly_hermite.tcc:
 
@@ -492,21 +512,29 @@ CMakeFiles/Particle_Sim.dir/src/main.cpp.o: /Users/lukeegan/Documents/Projects/P
 
 /opt/homebrew/Cellar/gcc/12.2.0/include/c++/12/cctype:
 
-/opt/homebrew/Cellar/gcc/12.2.0/include/c++/12/cassert:
+/opt/homebrew/Cellar/gcc/12.2.0/include/c++/12/bits/uses_allocator.h:
 
 /opt/homebrew/Cellar/gcc/12.2.0/include/c++/12/fstream:
 
 /opt/homebrew/Cellar/gcc/12.2.0/include/c++/12/bits/streambuf_iterator.h:
 
+/opt/homebrew/Cellar/gcc/12.2.0/include/c++/12/bits/stl_vector.h:
+
+/opt/homebrew/Cellar/gcc/12.2.0/include/c++/12/bits/stl_tree.h:
+
+/opt/homebrew/Cellar/gcc/12.2.0/include/c++/12/bits/vector.tcc:
+
 /opt/homebrew/Cellar/gcc/12.2.0/include/c++/12/bits/stl_pair.h:
+
+/opt/homebrew/Cellar/gcc/12.2.0/include/c++/12/bits/stl_multimap.h:
 
 /opt/homebrew/Cellar/gcc/12.2.0/include/c++/12/bits/stl_iterator.h:
 
 /opt/homebrew/Cellar/gcc/12.2.0/include/c++/12/bits/stl_function.h:
 
-/opt/homebrew/Cellar/gcc/12.2.0/include/c++/12/bits/std_abs.h:
+/opt/homebrew/Cellar/gcc/12.2.0/include/c++/12/bits/stl_bvector.h:
 
-/opt/homebrew/Cellar/gcc/12.2.0/include/c++/12/bits/sstream.tcc:
+/opt/homebrew/Cellar/gcc/12.2.0/include/c++/12/bits/std_abs.h:
 
 /opt/homebrew/Cellar/gcc/12.2.0/include/c++/12/bits/stl_algobase.h:
 
@@ -518,6 +546,8 @@ CMakeFiles/Particle_Sim.dir/src/main.cpp.o: /Users/lukeegan/Documents/Projects/P
 
 /opt/homebrew/Cellar/gcc/12.2.0/include/c++/12/bits/ostream_insert.h:
 
+/opt/homebrew/Cellar/gcc/12.2.0/include/c++/12/bits/node_handle.h:
+
 /opt/homebrew/Cellar/gcc/12.2.0/include/c++/12/bits/stl_iterator_base_funcs.h:
 
 /opt/homebrew/Cellar/gcc/12.2.0/include/c++/12/bits/new_allocator.h:
@@ -525,6 +555,8 @@ CMakeFiles/Particle_Sim.dir/src/main.cpp.o: /Users/lukeegan/Documents/Projects/P
 /opt/homebrew/Cellar/gcc/12.2.0/include/c++/12/bits/nested_exception.h:
 
 /opt/homebrew/Cellar/gcc/12.2.0/include/c++/12/bits/move.h:
+
+/opt/homebrew/Cellar/gcc/12.2.0/include/c++/12/bits/stl_relops.h:
 
 /opt/homebrew/Cellar/gcc/12.2.0/include/c++/12/bits/localefwd.h:
 
@@ -549,6 +581,8 @@ CMakeFiles/Particle_Sim.dir/src/main.cpp.o: /Users/lukeegan/Documents/Projects/P
 /opt/homebrew/Cellar/gcc/12.2.0/include/c++/12/bits/cxxabi_init_exception.h:
 
 /opt/homebrew/Cellar/gcc/12.2.0/include/c++/12/bits/cxxabi_forced.h:
+
+/opt/homebrew/Cellar/gcc/12.2.0/include/c++/12/bits/stl_uninitialized.h:
 
 /opt/homebrew/Cellar/gcc/12.2.0/include/c++/12/bits/cpp_type_traits.h:
 
@@ -586,7 +620,15 @@ CMakeFiles/Particle_Sim.dir/src/main.cpp.o: /Users/lukeegan/Documents/Projects/P
 
 /opt/homebrew/Cellar/gcc/12.2.0/include/c++/12/aarch64-apple-darwin21/bits/atomic_word.h:
 
-/Users/lukeegan/Documents/Projects/Particle_sim/src/headers/shader.h:
+/opt/homebrew/Cellar/gcc/12.2.0/include/c++/12/cassert:
+
+/Users/lukeegan/Documents/Projects/Particle_sim/dependencies/include/headers/shader.h:
+
+/Users/lukeegan/Documents/Projects/Particle_sim/dependencies/include/headers/mesh.h:
+
+/opt/homebrew/Cellar/gcc/12.2.0/include/c++/12/bits/sstream.tcc:
+
+/Users/lukeegan/Documents/Projects/Particle_sim/dependencies/include/headers/camera.h:
 
 /Users/lukeegan/Documents/Projects/Particle_sim/dependencies/include/glm/vec4.hpp:
 
@@ -597,6 +639,8 @@ CMakeFiles/Particle_Sim.dir/src/main.cpp.o: /Users/lukeegan/Documents/Projects/P
 /Users/lukeegan/Documents/Projects/Particle_sim/dependencies/include/glm/matrix.hpp:
 
 /Users/lukeegan/Documents/Projects/Particle_sim/dependencies/include/glm/mat2x2.hpp:
+
+/opt/homebrew/Cellar/gcc/12.2.0/include/c++/12/map:
 
 /opt/homebrew/Cellar/gcc/12.2.0/include/c++/12/bits/predefined_ops.h:
 
@@ -639,6 +683,8 @@ CMakeFiles/Particle_Sim.dir/src/main.cpp.o: /Users/lukeegan/Documents/Projects/P
 /Users/lukeegan/Documents/Projects/Particle_sim/dependencies/include/glm/detail/type_vec2.hpp:
 
 /Users/lukeegan/Documents/Projects/Particle_sim/dependencies/include/glm/detail/type_mat2x2.inl:
+
+/opt/homebrew/Cellar/gcc/12.2.0/include/c++/12/bits/erase_if.h:
 
 /Users/lukeegan/Documents/Projects/Particle_sim/dependencies/include/glm/detail/type_mat2x2.hpp:
 
@@ -748,6 +794,8 @@ CMakeFiles/Particle_Sim.dir/src/main.cpp.o: /Users/lukeegan/Documents/Projects/P
 
 /opt/homebrew/Cellar/gcc/12.2.0/include/c++/12/aarch64-apple-darwin21/bits/basic_file.h:
 
+/Users/lukeegan/Documents/Projects/Particle_sim/dependencies/include/headers/tiny_obj_loader.h:
+
 /Users/lukeegan/Documents/Projects/Particle_sim/dependencies/include/glm/detail/func_common_simd.inl:
 
 /Users/lukeegan/Documents/Projects/Particle_sim/dependencies/include/glm/detail/type_mat3x3.hpp:
@@ -777,6 +825,8 @@ CMakeFiles/Particle_Sim.dir/src/main.cpp.o: /Users/lukeegan/Documents/Projects/P
 /opt/homebrew/Cellar/gcc/12.2.0/include/c++/12/aarch64-apple-darwin21/bits/c++locale.h:
 
 /Users/lukeegan/Documents/Projects/Particle_sim/dependencies/include/GLFW/glfw3.h:
+
+/opt/homebrew/Cellar/gcc/12.2.0/include/c++/12/ext/aligned_buffer.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/wctype.h:
 
@@ -824,6 +874,8 @@ CMakeFiles/Particle_Sim.dir/src/main.cpp.o: /Users/lukeegan/Documents/Projects/P
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/runetype.h:
 
+/opt/homebrew/Cellar/gcc/12.2.0/include/c++/12/tuple:
+
 /opt/homebrew/Cellar/gcc/12.2.0/include/c++/12/sstream:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/pthread/sched.h:
@@ -861,6 +913,8 @@ CMakeFiles/Particle_Sim.dir/src/main.cpp.o: /Users/lukeegan/Documents/Projects/P
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/machine/endian.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/_types/_wctype_t.h:
+
+/opt/homebrew/Cellar/gcc/12.2.0/include/c++/12/bits/stl_map.h:
 
 /Users/lukeegan/Documents/Projects/Particle_sim/dependencies/include/glm/detail/precision.hpp:
 
@@ -1021,6 +1075,8 @@ CMakeFiles/Particle_Sim.dir/src/main.cpp.o: /Users/lukeegan/Documents/Projects/P
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_int16_t.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/arm/_types.h:
+
+/opt/homebrew/Cellar/gcc/12.2.0/include/c++/12/utility:
 
 /opt/homebrew/Cellar/gcc/12.2.0/lib/gcc/current/gcc/aarch64-apple-darwin21/12/include/stdarg.h:
 
