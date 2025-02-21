@@ -21,7 +21,7 @@ const unsigned int SCR_WIDTH = 800;
 const unsigned int SCR_HEIGHT = 600;
 
 // camera
-Camera camera(glm::vec3(0.0f, 0.0f, 3.0f));
+Camera camera(glm::vec3(0.0f, 0.0f, 5.0f));
 float lastX = SCR_WIDTH / 2.0f;
 float lastY = SCR_HEIGHT / 2.0f;
 bool firstMouse = true;
@@ -30,6 +30,9 @@ bool firstMouse = true;
 float deltaTime = 0.0f;
 float lastFrame = 0.0f;
 
+// lighting
+glm::vec3 lightPos(1.2f, 1.0f, 2.0f);
+glm::vec3 lightColor(1.0f, 1.0f, 1.0f);
 int main() {
   // glfw: initialize and configure
   // ------------------------------
@@ -72,14 +75,15 @@ int main() {
 
   // build and compile shaders
   // -------------------------
-  Shader sphereShader("../shaders/model_vertex.glsl",
-                      "../shaders/model_fragment.glsl");
-  Shader cubeShader("../shaders/base_vertex.glsl",
-                    "../shaders/base_fragment.glsl");
+  Shader modelShader("../shaders/model_vertex.glsl",
+                     "../shaders/model_fragment.glsl");
+  Shader lightShader("../shaders/lighting_vertex.glsl",
+                     "../shaders/lighting_fragment.glsl");
   // load mesh
   // -----------
   Mesh sphere("../models/sphere.obj");
   Mesh Cube("../models/cube.obj");
+  Mesh lightCube("../models/cube.obj");
 
   // draw in wireframe
   // glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
@@ -104,41 +108,41 @@ int main() {
         glm::perspective(glm::radians(camera.Zoom),
                          (float)SCR_WIDTH / (float)SCR_HEIGHT, 0.1f, 100.0f);
     glm::mat4 view = camera.GetViewMatrix();
-
+    glm::mat4 model = glm::mat4(1.0f);
+    // lighting cube /-------------/
+    lightShader.use();
+    lightShader.setVec3("lightColor", lightColor);
+    lightShader.setMat4("projection", projection);
+    lightShader.setMat4("view", view);
+    model = glm::mat4(1.0f);
+    model = glm::translate(model, lightPos);
+    model = glm::scale(model, glm::vec3(0.2f));
+    lightShader.setMat4("model", model);
+    lightCube.Draw(lightShader);
     // Cube (Transparent Container)
-    // Cube (Transparent Container)
-    cubeShader.use();
-    cubeShader.setVec4(
-        "color",
-        glm::vec4(1.0f, 0.0f, 1.0f, 0.3f));  // Adjust alpha for visibility
-    cubeShader.setMat4("projection", projection);
-    cubeShader.setMat4("view", view);
-
+    modelShader.use();
+    modelShader.setVec3("objectColor", glm::vec3(1.0f, 1.0f, 1.0f));
+    modelShader.setVec3("lightColor", lightColor);
+    modelShader.setMat4("projection", projection);
+    modelShader.setVec3("lightPos", lightPos);
+    modelShader.setMat4("view", view);
     glm::mat4 cubeModel = glm::mat4(1.0f);
-    cubeModel =
-        glm::scale(cubeModel, glm::vec3(1.5f, 1.5f, 1.5f));  // Scale container
-    cubeShader.setMat4("model", cubeModel);
-
+    cubeModel = glm::scale(cubeModel, glm::vec3(3.0f, 3.0f, 3.0f));
+    modelShader.setMat4("model", cubeModel);
     // Disable depth writing but keep depth testing
     glDepthMask(GL_FALSE);
     glEnable(GL_BLEND);
     glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
     glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
-    Cube.Draw(cubeShader);
+    Cube.Draw(modelShader);
     glPolygonMode(GL_FRONT_AND_BACK, GL_FILL);
     glDepthMask(GL_TRUE);  // Re-enable depth writing
     glDisable(GL_BLEND);
     // Sphere (Inside the Cube)
-    sphereShader.use();
-    sphereShader.setMat4("projection", projection);
-    sphereShader.setMat4("view", view);
-
     glm::mat4 sphereModel = glm::mat4(1.0f);
-    sphereModel = glm::scale(sphereModel,
-                             glm::vec3(0.1f, 0.1f, 0.1f));  // Scale down sphere
-    sphereShader.setMat4("model", sphereModel);
-
-    sphere.Draw(sphereShader);
+    sphereModel = glm::scale(sphereModel, glm::vec3(0.1f, 0.1f, 0.1f));
+    modelShader.setMat4("model", sphereModel);
+    sphere.Draw(modelShader);
 
     // Swap buffers and poll events
     glfwSwapBuffers(window);
