@@ -31,7 +31,7 @@ float deltaTime = 0.0f;
 float lastFrame = 0.0f;
 
 // lighting
-glm::vec3 lightPos(1.2f, 1.0f, 2.0f);
+glm::vec3 lightPos(5.0f, 7.0f, 5.0f);
 glm::vec3 lightColor(1.0f, 1.0f, 1.0f);
 int main() {
   // glfw: initialize and configure
@@ -79,11 +79,12 @@ int main() {
                      "../shaders/model_fragment.glsl");
   Shader lightShader("../shaders/lighting_vertex.glsl",
                      "../shaders/lighting_fragment.glsl");
+
   // load mesh
   // -----------
   Mesh sphere("../models/sphere.obj");
   Mesh Cube("../models/cube.obj");
-  Mesh lightCube("../models/cube.obj");
+  Mesh lightCube("../models/sphere.obj");
 
   // draw in wireframe
   // glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
@@ -110,6 +111,8 @@ int main() {
     glm::mat4 view = camera.GetViewMatrix();
     glm::mat4 model = glm::mat4(1.0f);
     // lighting cube /-------------/
+
+    // lighting cube /-------------/
     lightShader.use();
     lightShader.setVec3("lightColor", lightColor);
     lightShader.setMat4("projection", projection);
@@ -119,28 +122,27 @@ int main() {
     model = glm::scale(model, glm::vec3(0.2f));
     lightShader.setMat4("model", model);
     lightCube.Draw(lightShader);
+
     // Cube (Transparent Container)
     modelShader.use();
-    modelShader.setVec3("objectColor", glm::vec3(1.0f, 1.0f, 1.0f));
-    modelShader.setVec3("lightColor", lightColor);
-    modelShader.setMat4("projection", projection);
     modelShader.setVec3("lightPos", lightPos);
+    modelShader.setVec3("objectColor", glm::vec3(0.5, 0.5, 0.5));
+    modelShader.setVec3("lightColor", lightColor);
+    modelShader.setVec3("viewPos", camera.Position);
+    modelShader.setMat4("projection", projection);
     modelShader.setMat4("view", view);
     glm::mat4 cubeModel = glm::mat4(1.0f);
     cubeModel = glm::scale(cubeModel, glm::vec3(3.0f, 3.0f, 3.0f));
     modelShader.setMat4("model", cubeModel);
     // Disable depth writing but keep depth testing
-    glDepthMask(GL_FALSE);
     glEnable(GL_BLEND);
     glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
-    glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
-    Cube.Draw(modelShader);
-    glPolygonMode(GL_FRONT_AND_BACK, GL_FILL);
-    glDepthMask(GL_TRUE);  // Re-enable depth writing
+    // Cube.Draw(modelShader);
     glDisable(GL_BLEND);
     // Sphere (Inside the Cube)
     glm::mat4 sphereModel = glm::mat4(1.0f);
-    sphereModel = glm::scale(sphereModel, glm::vec3(0.1f, 0.1f, 0.1f));
+    modelShader.setVec3("objectColor", glm::vec3(0.5, 0.5, 0.1));
+    sphereModel = glm::scale(sphereModel, glm::vec3(0.5f, 0.5f, 0.5f));
     modelShader.setMat4("model", sphereModel);
     sphere.Draw(modelShader);
 
