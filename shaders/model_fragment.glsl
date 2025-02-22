@@ -23,7 +23,7 @@ void main()
     float diff = max(dot(norm, lightDir), 0.0);
     vec3 diffuse = diff * lightColor;
 
-    //specular lightings
+    //specular lightings        
     float specularStrength = 0.5;
     vec3 viewDirection = normalize(viewPos-fragmentPos);
     vec3 reflectDirection = reflect(-lightDir, norm);

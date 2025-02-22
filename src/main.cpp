@@ -136,22 +136,30 @@ int main() {
 
     // Sphere (Inside the Cube)
     glm::mat4 sphereModel = glm::mat4(1.0f);
-    sphereModel = glm::scale(sphereModel, glm::vec3(0.5f, 0.5f, 0.5f));
+    sphereModel = glm::scale(sphereModel, glm::vec3(0.1f, 0.1f, 0.1f));
     modelShader.setMat4("model", sphereModel);
     modelShader.setVec3("lightPos", lightPos);
-    modelShader.setVec3("objectColor", glm::vec3(0.5, 0.5, 0.5));
+    modelShader.setVec3("objectColor", glm::vec3(0.5, 0.2, 0.8));
     modelShader.setVec3("lightColor", lightColor);
     modelShader.setVec3("viewPos", camera.Position);
     modelShader.setFloat("trans", 1.0f);
     sphere.Draw(modelShader);
 
     glm::mat4 cubeModel = glm::mat4(1.0f);
+    modelShader.setVec3("objectColor", glm::vec3(1.0, 1.0, 1.0));
     cubeModel = glm::scale(cubeModel, glm::vec3(3.0f, 3.0f, 3.0f));
     modelShader.setMat4("model", cubeModel);
-    modelShader.setFloat("trans", 0.4f);
+    modelShader.setFloat("trans", 0.3f);
+    // cull:see faces of cube on far side
+    glDisable(GL_CULL_FACE);
+    // blend: transparency, allows for alpha value
     glEnable(GL_BLEND);
+    // makes mesh visible
+    // glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
     Cube.Draw(containerShader);
+    // glPolygonMode(GL_FRONT_AND_BACK, GL_FILL);
     glDisable(GL_BLEND);
+    glEnable(GL_CULL_FACE);
 
     // Swap buffers and poll events
     glfwSwapBuffers(window);
