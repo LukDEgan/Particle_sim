@@ -72,6 +72,10 @@ int main() {
   // configure global opengl state
   // -----------------------------
   glEnable(GL_DEPTH_TEST);
+  glEnable(GL_CULL_FACE);
+  glFrontFace(GL_CCW);
+
+  glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
 
   // build and compile shaders
   // -------------------------
@@ -79,6 +83,8 @@ int main() {
                      "../shaders/model_fragment.glsl");
   Shader lightShader("../shaders/lighting_vertex.glsl",
                      "../shaders/lighting_fragment.glsl");
+  Shader containerShader("../shaders/container_vertex.glsl",
+                         "../shaders/container_fragment.glsl");
 
   // load mesh
   // -----------
@@ -125,26 +131,27 @@ int main() {
 
     // Cube (Transparent Container)
     modelShader.use();
+    modelShader.setMat4("projection", projection);
+    modelShader.setMat4("view", view);
+
+    // Sphere (Inside the Cube)
+    glm::mat4 sphereModel = glm::mat4(1.0f);
+    sphereModel = glm::scale(sphereModel, glm::vec3(0.5f, 0.5f, 0.5f));
+    modelShader.setMat4("model", sphereModel);
     modelShader.setVec3("lightPos", lightPos);
     modelShader.setVec3("objectColor", glm::vec3(0.5, 0.5, 0.5));
     modelShader.setVec3("lightColor", lightColor);
     modelShader.setVec3("viewPos", camera.Position);
-    modelShader.setMat4("projection", projection);
-    modelShader.setMat4("view", view);
+    modelShader.setFloat("trans", 1.0f);
+    sphere.Draw(modelShader);
+
     glm::mat4 cubeModel = glm::mat4(1.0f);
     cubeModel = glm::scale(cubeModel, glm::vec3(3.0f, 3.0f, 3.0f));
     modelShader.setMat4("model", cubeModel);
-    // Disable depth writing but keep depth testing
+    modelShader.setFloat("trans", 0.4f);
     glEnable(GL_BLEND);
-    glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
-    // Cube.Draw(modelShader);
+    Cube.Draw(containerShader);
     glDisable(GL_BLEND);
-    // Sphere (Inside the Cube)
-    glm::mat4 sphereModel = glm::mat4(1.0f);
-    modelShader.setVec3("objectColor", glm::vec3(0.5, 0.5, 0.1));
-    sphereModel = glm::scale(sphereModel, glm::vec3(0.5f, 0.5f, 0.5f));
-    modelShader.setMat4("model", sphereModel);
-    sphere.Draw(modelShader);
 
     // Swap buffers and poll events
     glfwSwapBuffers(window);
