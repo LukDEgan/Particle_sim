@@ -73,7 +73,6 @@ int main() {
   // -----------------------------
   glEnable(GL_DEPTH_TEST);
   glEnable(GL_CULL_FACE);
-  glFrontFace(GL_CCW);
 
   glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
 
@@ -83,8 +82,6 @@ int main() {
                      "../shaders/model_fragment.glsl");
   Shader lightShader("../shaders/lighting_vertex.glsl",
                      "../shaders/lighting_fragment.glsl");
-  Shader containerShader("../shaders/container_vertex.glsl",
-                         "../shaders/container_fragment.glsl");
 
   // load mesh
   // -----------
@@ -155,9 +152,10 @@ int main() {
     // blend: transparency, allows for alpha value
     glEnable(GL_BLEND);
     // makes mesh visible
-    // glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
-    Cube.Draw(containerShader);
-    // glPolygonMode(GL_FRONT_AND_BACK, GL_FILL);
+    glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
+
+    Cube.Draw(modelShader);
+    glPolygonMode(GL_FRONT_AND_BACK, GL_FILL);
     glDisable(GL_BLEND);
     glEnable(GL_CULL_FACE);
 
